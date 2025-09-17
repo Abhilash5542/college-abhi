@@ -56,7 +56,7 @@ int main()
         }
     }
     printf("Maximum subarray sum is %d\n", max_sum);
-    
+
     // by sliding window technique
     int window_sum = 0;
     for (int i = 0; i < k; i++)
@@ -73,5 +73,17 @@ int main()
         }
     }
     printf("Maximum subarray sum using sliding window is %d\n", max_sum);
-    return 0;
+
+// {1,2,3,5,6,7} find a mising number in array
+    int arr2[6] = {1, 2, 3, 5, 6, 7};
+    int n = 7; // since one number is missing
+    int total_sum = n * (n + 1) / 2;
+    int arr_sum = 0;
+    for (int i = 0; i < 6; i++)
+    {
+        arr_sum += arr2[i];
+    }
+    int missing_number = total_sum - arr_sum;
+    printf("Missing number is %d\n", missing_number);
+   return 0;
 }
