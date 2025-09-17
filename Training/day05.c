@@ -56,6 +56,7 @@ int main()
         }
     }
     printf("Maximum subarray sum is %d\n", max_sum);
+    
     // by sliding window technique
     int window_sum = 0;
     for (int i = 0; i < k; i++)
