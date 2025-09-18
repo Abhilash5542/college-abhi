@@ -3,7 +3,7 @@
 
 int main()
 {
-    int arr[5] = {1, 2, 3, 4, 5};
+    int arr[5] = {1, 2, -4, 5,-7};
     int target = 5, k;
     // for target value index
     for (int i = 0; i < 5; i++)

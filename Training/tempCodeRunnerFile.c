@@ -1,0 +1,1 @@
+if(currentSum>max) max=currentSum;
