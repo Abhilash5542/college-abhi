@@ -42,7 +42,7 @@ int main()
         if (currentSum > max)
             max = currentSum;
         if (currentSum < 0)  currentSum= 0;
-       //if(max<0) max=0; this will not work in negative values 
+       
     }
 
     printf("%d", max);
