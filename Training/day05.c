@@ -85,5 +85,25 @@ int main()
     }
     int missing_number = total_sum - arr_sum;
     printf("Missing number is %d\n", missing_number);
+
+// check array is palindrome 
+    int arr3[5] = {1, 2, 3, 2, 1};
+    int is_palindrome = 1;
+    for (int i = 0; i < 5 / 2; i++)
+    {
+        if (arr3[i] != arr3[5 - i - 1])
+        {
+            is_palindrome = 0;
+            break;
+        }
+    }
+    if (is_palindrome)
+    {
+        printf("Array is palindrome\n");
+    }
+    else
+    {
+        printf("Array is not palindrome\n");
+    }
    return 0;
 }
